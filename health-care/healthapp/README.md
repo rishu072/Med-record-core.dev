@@ -4,12 +4,6 @@
   <b>Secure E-Health Records & Emergency Bypass Share Platform</b>
 </p>
 
-<h2 align="center">🛠 Tech Stack</h2>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,react,mongodb,tailwind,nodejs" />
-</p>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white"/>
   <img src="https://img.shields.io/badge/JWT-Authentication-black?style=flat-square&logo=jsonwebtokens"/>
