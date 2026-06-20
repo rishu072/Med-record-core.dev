@@ -72,10 +72,22 @@ jobs:
       - name: Build with Next.js
         run: npx next build
 
+      - name: Resolve artifact path
+        id: artifact-path
+        run: |
+          if [ -d "out" ]; then
+            echo "path=health-care/healthapp/out" >> "$GITHUB_OUTPUT"
+          elif [ -d ".next" ]; then
+            echo "path=health-care/healthapp/.next" >> "$GITHUB_OUTPUT"
+          else
+            echo "No build output directory found (.next or out)." >&2
+            exit 1
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: health-care/healthapp/.next
+          path: ${{ steps.artifact-path.outputs.path }}
 
   deploy:
     needs: build
