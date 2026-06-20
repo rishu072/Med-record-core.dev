@@ -179,6 +179,3 @@ SMTP_PASSWORD=your_smtp_password
     ```bash
     npm run dev
     ```
-
-4.  **Access the Application:**
-    Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
