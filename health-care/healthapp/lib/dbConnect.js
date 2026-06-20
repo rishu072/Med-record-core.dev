@@ -10,7 +10,7 @@ async function dbConnect() {
   const MONGO_URI = process.env.MONGO_URI;
 
   if (!MONGO_URI) {
-    throw new Error("Mongo Url Not Found");
+    throw new Error("MONGO_URI environment variable is not defined");
   }
 
   if (cached.conn) {
